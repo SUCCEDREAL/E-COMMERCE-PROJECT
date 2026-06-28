@@ -1,0 +1,214 @@
+/* ── Product Card ─────────────────────────────────────────── */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* Tokens */
+:root {
+  --card-bg: #f8f6f2;
+  --card-shadow: 0 2px 8px rgba(46, 26, 26, 0.08);
+  --card-shadow-hover: 0 12px 32px rgba(26, 26, 46, 0.16);
+  --card-radius: 14px;
+
+  --text-primary: #1a1a2e;
+  --text-secondary: #8b8fa8;
+  --text-strike: #b0b3c4;
+
+  --accent: #e8a020;
+  --accent-dark: #c4860a;
+  --badge-bg: #e05050;
+  --badge-text: #ffffff;
+
+  --fav-idle-bg: #efefed;
+  --fav-hover-bg: #fde8e8;
+  --fav-active: #e05050;
+
+  --font: "Inter", system-ui, sans-serif;
+}
+
+/* Card grid — wrap this around your Productcard list */
+.product-list {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 20px;
+  transition: 02s all ease-in-out;
+  margin: 30px 50px;
+}
+
+.product-list :hover {
+  border-radius: 30px 2px 5px;
+}
+
+/* Card shell */
+.product-card-section {
+  font-family: var(--font);
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition:
+    box-shadow 0.22s ease,
+    transform 0.22s ease;
+  cursor: pointer;
+}
+
+.product-card-section:hover {
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-3px);
+  box-shadow: 0px 0px 8px;
+}
+
+/* Image zone */
+.product-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 4;
+  background: #eceae5;
+  overflow: hidden;
+}
+
+/* The <img> itself — override the duplicate class */
+.product-image img,
+img.product-image {
+  width: 100%;
+  height: 300px;
+  /* object-fit: cover; */
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.product-card-section:hover .product-image img,
+.product-card-section:hover img.product-image {
+  transform: scale(1.04);
+}
+
+/* Badge */
+.product-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: var(--badge-bg);
+  color: var(--badge-text);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 6px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Info zone */
+.product-info {
+  padding: 16px 16px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.product-info h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  /* clamp to 2 lines */
+  display: -webkit-box;
+  /* -webkit-line-clamp: 2; */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Price row */
+.price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.price {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.03em;
+}
+
+.old-price {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-strike);
+  text-decoration: line-through;
+}
+
+/* Button row */
+.product-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+}
+
+/* Favorite button — pill icon button */
+.favorite-btn {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background: var(--fav-idle-bg);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition:
+    background 0.18s ease,
+    color 0.18s ease,
+    transform 0.15s ease;
+}
+
+.favorite-btn:hover {
+  background: var(--fav-hover-bg);
+  color: var(--fav-active);
+  transform: scale(1.08);
+}
+
+.favorite-btn:active {
+  transform: scale(0.95);
+}
+
+/* Add to Cart button */
+.add-cart-btn {
+  flex: 1;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background: var(--accent);
+  color: #ffffff;
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition:
+    background 0.18s ease,
+    transform 0.15s ease,
+    box-shadow 0.18s ease;
+}
+
+.add-cart-btn:hover {
+  background: var(--accent-dark);
+  box-shadow: 0 4px 14px rgba(232, 160, 32, 0.35);
+  transform: translateY(-1px);
+}
+
+.add-cart-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}

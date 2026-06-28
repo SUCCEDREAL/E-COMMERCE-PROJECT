@@ -1,0 +1,39 @@
+.features-container {
+  margin-bottom: 30px;
+}
+
+.line {
+  /* font-size: 1000px; */
+  color: black;
+  font-weight: bolder;
+  border-top: 1.5px solid gray;
+}
+
+.features-section {
+  display: flex;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* text-align: center; */
+  margin: 0 150px;
+  gap: 170px;
+}
+
+.feature-icon {
+  position: relative;
+  top: 30px;
+  right: 30px;
+}
+
+.features-section h4 {
+  color: rgb(66, 66, 66);
+}
+
+.features-section p {
+  color: rgb(88, 88, 88);
+}
+
+.line2 {
+  color: black;
+  font-weight: bolder;
+  border-top: 1.5px solid gray;
+  margin-top: 15px;
+}

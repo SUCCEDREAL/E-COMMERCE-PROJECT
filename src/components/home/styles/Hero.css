@@ -1,0 +1,90 @@
+.hero-container {
+  display: flex;
+  gap: 15px;
+  background-color: rgb(243, 235, 225);
+  border-radius: 60px;
+  margin: 150px 30px;
+  margin-bottom: 70px;
+}
+
+.hero-text {
+  padding: 0 70px;
+  padding-top: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-text p {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: rgb(3, 3, 3);
+}
+
+.hero-text h1 {
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 15px;
+  font-weight: 900;
+}
+
+.hero-description {
+  color: rgb(3, 3, 3);
+  font-size: 60px;
+  margin-top: 25px;
+}
+
+.hero-button {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.shopBtn button {
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.shopBtn a {
+  transition: 2s all ease-in-out;
+}
+
+.shopBtn a :hover {
+  background-color: black;
+  color: white;
+}
+
+.collection-btn button {
+  padding: 10px 30px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #b37c50;
+  border: black 3px solid;
+  color: white;
+}
+
+.collection-btn a {
+  transition: 2s all ease-in-out;
+}
+
+.collection-btn a :hover {
+  background-color: white;
+  color: black;
+}
+
+.hero-image {
+  overflow: hidden;
+  padding-left: 50px;
+  width: -300%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.hero-image img {
+  height: 500px;
+  width: 530px;
+}

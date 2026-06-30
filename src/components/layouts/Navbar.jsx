@@ -6,7 +6,7 @@ import { BiUser } from "react-icons/bi";
 import { AiOutlineHeart } from "react-icons/ai";
 import { FiShoppingCart } from "react-icons/fi";
 
-const header = () => {
+const Header = () => {
   return (
     <header className="navBar">
       <div className="navbar-content">
@@ -17,9 +17,9 @@ const header = () => {
 
         <nav className="nav-link">
           <Link to="/">Home</Link>
-          <Link to="/Shop">Shop</Link>
-          <Link to="/Category">Categories</Link>
-          <Link to="/AboutUs">About Us</Link>
+          <Link to="/shop">Shop</Link>
+          <Link to="/category">Categories</Link>
+          <Link to="/about-us">About Us</Link>
         </nav>
 
         <div className="nav-right">
@@ -31,7 +31,6 @@ const header = () => {
 
         <div className="nav-icon">
           <a href="">
-            {" "}
             <BiUser className="navI" />
           </a>
           <a href="">
@@ -40,11 +39,11 @@ const header = () => {
         </div>
 
         <div className="cart-icon">
-          <FiShoppingCart className="cart"/>
+          <FiShoppingCart className="cart" />
         </div>
       </div>
     </header>
   );
 };
 
-export default header;
+export default Header;

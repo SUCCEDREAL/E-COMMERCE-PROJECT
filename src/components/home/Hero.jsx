@@ -19,7 +19,7 @@ const Hero = () => {
 
         <div className="hero-button">
           <div className="shopBtn">
-            <a href="">
+            <a href="/Shop">
               <button>Shop Now</button>
             </a>
           </div>

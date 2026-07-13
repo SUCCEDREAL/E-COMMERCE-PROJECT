@@ -1,0 +1,115 @@
+/* .category-productCard {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  width: 350px;
+
+  overflow: hidden;
+  transition:
+    box-shadow 0.22s ease,
+    transform 0.22s ease;
+  cursor: pointer;
+  margin: 30px 50px;
+
+}
+
+.fetch-image img {
+  margin-top: 200px;
+  display: flex;
+
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.category-productCard {
+  margin: 150px 50px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition:
+    box-shadow 0.22s ease,
+    transform 0.22s ease;
+  width: 250px;
+  align-content: center;
+}
+
+.category-productCard:hover {
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-3px);
+  box-shadow: 0px 0px 8px;
+}
+
+.product-results {
+  width: 90%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.productCard {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  align-self: center;
+  display: flex;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.productCard img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.productCard h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #222;
+  height: 48px;
+  overflow: hidden;
+}
+
+.productCard p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e63946;
+}
+
+.card-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.cartBtnSpan {
+  padding: 10px 20px;
+}
+
+.cartBtn {
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cartBtn:hover {
+  background-color: #c56f6f;
+}

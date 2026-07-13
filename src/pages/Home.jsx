@@ -3,8 +3,7 @@ import Topbar from "../components/layouts/Topbar";
 import Navbar from "../components/layouts/Navbar";
 import Hero from "../components/home/Hero";
 import Features from "../components/home/Features";
-import Categories from "../components/home/Categories";
-import Productcard from "../components/home/Productcard";
+import Productcard from "../components/categories/Productcard";
 import product from "../../data/product";
 import ProductHeader from "../components/home/ProductHeader";
 import NewsLetter from "../components/home/NewsLetter";
@@ -29,7 +28,6 @@ const Home = () => {
       <Navbar cartCount={cart.length} />
       <Hero />
       <Features />
-      <Categories />
       <ProductHeader />
       <div className="product-list">
         {product.map((p) => (

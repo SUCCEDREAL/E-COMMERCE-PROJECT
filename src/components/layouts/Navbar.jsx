@@ -6,7 +6,7 @@ import { BiUser } from "react-icons/bi";
 import { AiOutlineHeart } from "react-icons/ai";
 import { FiShoppingCart } from "react-icons/fi";
 
-const Header = () => {
+const Header = ({ cartCount }) => {
   return (
     <header className="navBar">
       <div className="navbar-content">
@@ -18,7 +18,7 @@ const Header = () => {
         <nav className="nav-link">
           <Link to="/">Home</Link>
           <Link to="/shop">Shop</Link>
-          <Link to="/category">Categories</Link>
+          <Link to="/categories">Categories</Link>
           <Link to="/about-us">About Us</Link>
         </nav>
 
@@ -39,7 +39,30 @@ const Header = () => {
         </div>
 
         <div className="cart-icon">
-          <FiShoppingCart className="cart" />
+          <div style={{ position: "relative", display: "inline-block" }}>
+            <FiShoppingCart className="cart" />
+            {cartCount > 0 && (
+              <span
+                style={{
+                  position: "absolute",
+                  top: "-8px",
+                  right: "-8px",
+                  background: "red",
+                  color: "white",
+                  borderRadius: "50%",
+                  width: "18px",
+                  height: "18px",
+                  fontSize: "11px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  fontWeight: "bold",
+                }}
+              >
+                {cartCount}
+              </span>
+            )}
+          </div>
         </div>
       </div>
     </header>

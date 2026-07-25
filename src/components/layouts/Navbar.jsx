@@ -30,9 +30,14 @@ const Header = ({ cartCount }) => {
         </div>
 
         <div className="nav-icon">
-          <a href="">
+          <Link to="/signup">
             <BiUser className="navI" />
-          </a>
+          </Link>
+
+          {/* <a href="">
+            <BiUser className="navI" />
+          </a> */}
+
           <a href="">
             <AiOutlineHeart className="navI" />
           </a>

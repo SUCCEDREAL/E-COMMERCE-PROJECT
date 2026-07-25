@@ -1,7 +1,7 @@
 .hero-container {
   display: flex;
   gap: 15px;
-  background-color: rgb(243, 235, 225);
+  background-color: rgb(236, 229, 219);
   border-radius: 60px;
   margin: 150px 30px;
   margin-bottom: 70px;
@@ -62,11 +62,12 @@
   font-weight: bold;
   background-color: #b37c50;
   border: black 3px solid;
+  border: none;
   color: white;
 }
 
 .collection-btn a {
-  transition: 2s all ease-in-out;
+  transition: 1ms all ease-in-out;
 }
 
 .collection-btn a :hover {

@@ -1,5 +1,6 @@
 import "../home/styles/Hero.css";
 import heroNew from "../../assets/heroNew.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -19,9 +20,9 @@ const Hero = () => {
 
         <div className="hero-button">
           <div className="shopBtn">
-            <a href="/Shop">
+            <Link to="/shop">
               <button>Shop Now</button>
-            </a>
+            </Link>
           </div>
 
           <div className="collection-btn">

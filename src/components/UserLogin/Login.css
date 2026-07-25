@@ -1,0 +1,73 @@
+.login-container {
+  margin: 125px 430px;
+  background-color: blanchedalmond;
+  border-radius: 20px;
+  padding: 50px 90px;
+  box-shadow: 3px 5px 7px;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.login-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-group {
+  /* line-height: 30px; */
+  margin: 15px 0;
+}
+
+.login-group label {
+  color: black;
+  font-weight: bolder;
+}
+
+.login-group input {
+  width: 300px;
+  padding: 0 15px;
+  height: 35px;
+  border-radius: 8px;
+}
+
+.loginBtn {
+  text-align: center;
+}
+
+.loginBtn button {
+  background-color: rgb(232, 160, 32);
+  padding: 8px 45px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+  transition: all ease-in-out 1.5m;
+}
+
+.loginBtn button:hover {
+  background-color: rgb(80, 80, 80);
+  color: white;
+}
+
+.forgetText {
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.link {
+  text-decoration: none;
+  background-color: rgb(230, 200, 200);
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+.link:hover {
+  color: rgb(232, 160, 32);
+}

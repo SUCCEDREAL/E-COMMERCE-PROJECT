@@ -16,6 +16,7 @@ const CategoryProducts = () => {
     const fetchProducts = async () => {
       setLoading(true);
 
+      // fetching product from external API (fakeapi && dummyjson)
       try {
         const [fakeResponse, dummyResponse] = await Promise.all([
           fetch(
@@ -55,26 +56,6 @@ const CategoryProducts = () => {
 
     fetchProducts();
   }, [category]);
-
-  // useEffect(() => {
-  //   setLoading(true);
-
-  //   fetch(
-  //     `https://fakestoreapi.com/products/category/${decodeURIComponent(
-  //       category,
-  //     )}`,
-  //     `https://dummyjson.com/products/category/${decodeURIComponent(category)}`,
-  //   )
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       setProducts(data);
-  //       setLoading(false);
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error fetching products:", error);
-  //       setLoading(false);
-  //     });
-  // }, [category]);
 
   return (
     <>

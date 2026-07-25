@@ -1,0 +1,21 @@
+.cart-section button {
+  padding: 10px 30px;
+  transition: 3s all ease-in-out;
+}
+
+.shop-btn-cart {
+  background-color: rgb(232, 160, 32);
+  border: none;
+  border-radius: 5px;
+  padding: "5px 30px";
+  align-items: center;
+  color: white;
+}
+
+.cart-section button :hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.shop-btn-cart :hover {
+  background-color: rgb(0, 0, 0);
+}
